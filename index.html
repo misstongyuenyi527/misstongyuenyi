@@ -3,60 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>你的名字 | 個人網站與作品集</title>
+    <title>個人作品集 | 老師與作家的空間</title>
     <style>
-        /* 簡單的 CSS 讓網頁變美觀 */
-        body { font-family: "Microsoft JhengHei", sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        header { text-align: center; padding: 50px 0; border-bottom: 1px solid #ddd; }
-        h1 { color: #2c3e50; }
-        .section { margin: 40px 0; }
-        .portfolio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .item { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        footer { text-align: center; font-size: 0.8em; color: #888; margin-top: 50px; }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; line-height: 1.8; color: #333; max-width: 900px; margin: 0 auto; padding: 30px; background-color: #fdfcf8; }
+        header { text-align: center; padding: 60px 0; border-bottom: 2px solid #e0dcd0; }
+        h1 { color: #2c3e50; font-size: 2.5em; letter-spacing: 2px; }
+        h2 { border-left: 5px solid #8e44ad; padding-left: 15px; margin-top: 50px; color: #2980b9; }
+        .intro { font-size: 1.1em; color: #555; text-align: center; max-width: 600px; margin: 20px auto; }
+        .card-container { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px; }
+        .card { background: white; padding: 20px; border-radius: 10px; border: 1px solid #eee; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
+        .card h3 { margin-top: 0; color: #d35400; }
+        .contact-btn { display: inline-block; padding: 10px 25px; background-color: #2c3e50; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+        footer { text-align: center; margin-top: 80px; padding: 20px; color: #999; font-size: 0.9em; }
+        ul { padding-left: 20px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>你的名字</h1>
-        <p>中文科教師 | 文學創作者 | 內容策劃</p>
+        <h1>[湯婉兒]</h1>
+        <p class="intro">中文科教師 | 文學創作者</p>
+        <p>深信文字的力量，致力於傳承文學美感與人文精神。</p>
     </header>
 
     <div class="section">
         <h2>關於我</h2>
-        <p>這裡寫一段簡短的自我介紹。例如：熱衷於中文教育與當代文學創作，擁有五年的教學經驗，作品散見於各類文學刊物。致力於將數位工具融入國學教育中。</p>
+        <p>目前任職於中學，專職中文科教學工作。在教學之餘，熱衷於文學創作，作品多探討生活本質與人文情感。我享受在課堂上與學生共同拆解文學象徵，也喜歡在方寸紙間構築文字世界。</p>
     </div>
 
     <div class="section">
-        <h2>個人履歷</h2>
+        <h2>專業資歷</h2>
         <ul>
-            <li><strong>學歷：</strong> ○○ 大學 中國文學系 碩士</li>
-            <li><strong>經歷：</strong> ○○ 中學 專任教師 (2020 - 至今)</li>
-            <li><strong>專長：</strong> 散文創作、教材設計、文學評論</li>
+            <li><strong>現職：</strong> 中學中文科教師</li>
+            <li><strong>教學重點：</strong> 文學分析、創意寫作、DSE 應試策略</li>
+            <li><strong>專業認證：</strong> [例如：教育文憑 (PGDE)、中文系碩士]</li>
         </ul>
-        <a href="resume.md">查看完整履歷...</a>
     </div>
 
     <div class="section">
-        <h2>精選作品</h2>
-        <div class="portfolio-grid">
-            <div class="item">
-                <h3>文學作品 A</h3>
-                <p>發表於《○○月刊》，關於都市記憶的散文。</p>
-                <a href="#">閱讀全文</a>
+        <h2>文學作品集</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>精選散文</h3>
+                <p>收錄近年發表於各類文學刊物的作品，探索城市與個人記憶的連結。</p>
+                <a href="#">閱讀更多 &rarr;</a>
             </div>
-            <div class="item">
-                <h3>教學教案 B</h3>
-                <p>針對高中古典詩詞設計的數位互動教材。</p>
-                <a href="#">查看教案</a>
+            <div class="card">
+                <h3>文學評論</h3>
+                <p>對當代文學及經典文本的深度剖析與個人見解。</p>
+                <a href="#">閱讀更多 &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>教學資源分享</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>公開課教案</h3>
+                <p>關於「文學象徵」的教學設計與課堂反思。</p>
+                <a href="#">查看教案 &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>DSE 備考筆記</h3>
+                <p>為學生整理的文言文及白話文應試心得。</p>
+                <a href="#">下載資源 &rarr;</a>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>© 2026 你的名字. Powered by GitHub Pages.</p>
+        <p>© 2026 [湯婉兒] | 透過 GitHub Pages 建立</p>
     </footer>
 
 </body>
